@@ -37,7 +37,7 @@ func main() {
     fmt.Println("Starting application...")
     go manager.start()
     http.HandleFunc("/ws", wsPage)
-    http.ListenAndServe(":12345", nil)
+    http.ListenAndServe(":12346", nil)
 }
 
 func (manager *ClientManager) start() {
